@@ -1,0 +1,25 @@
+{
+  "name": "aminima",
+  "version": "1.0.0",
+  "description": "A personal CSS library",
+  "author": "alex (@shooteram)",
+  "license": "MIT",
+  "private": false,
+  "repository": "github:shooteram/aminima",
+  "bugs": "https://github.com/shooteram/aminima/issues",
+  "homepage": "https://github.com/shooteram/aminima",
+  "dependencies": {
+    "stylus": "^0.54.5"
+  },
+  "keywords": [
+    "css",
+    "stylus"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "stylus -w src/aminima.styl -o dist/aminima.min.css",
+    "build": "stylus src/aminima.styl -o dist/aminima.min.css --compress"
+  }
+}

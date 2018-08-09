@@ -1,0 +1,19 @@
+.card
+  text-align -webkit-auto
+  padding 20px 30px
+  overflow hidden
+  @extend .mx-3
+  height auto
+
+  for i in primary info danger
+    color = var(unquote('--'+i+'-color'))
+    &.card-{i}
+      if i != primary
+        color color
+      box-shadow(color)
+      border(color)
+
+.card-title
+  color var(--primary-color)
+  font-size 1rem
+  @extend .mb-1
