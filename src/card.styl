@@ -1,9 +1,6 @@
 .card
-  text-align -webkit-auto
-  padding 20px 30px
-  overflow hidden
   @extend .mx-3
-  height auto
+  position relative
 
   for i in primary info danger
     color = var(unquote('--'+i+'-color'))
@@ -13,7 +10,30 @@
       box-shadow(color)
       border(color)
 
-.card-title
-  color var(--primary-color)
-  font-size 1rem
-  @extend .mb-1
+  .title
+    background background-color
+    position absolute
+    padding 2px 10px
+    font-size 1.1em
+    @extend .mb-1
+    top -12px
+    left 19px
+    z-index 6
+
+    &::selection
+      color inherit
+
+  .body
+    padding 20px 30px
+    text-align left
+
+  .close
+    &:before
+      position absolute
+      text-align right
+      padding 7px 22px
+      cursor pointer
+      display block
+      content "x"
+      right 0px
+      top 0
