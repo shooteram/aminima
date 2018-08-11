@@ -23,5 +23,5 @@ All of the variables can be found inside [this object](https://github.com/shoote
 # Demo
 
 <p align="center">
-  <img src="https://i.imgur.com/2jOZZUC.png" alt="demo"/>
+  <img src="https://i.imgur.com/RMkZ5Xc.png" alt="demo"/>
 </p>
