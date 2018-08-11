@@ -1,7 +1,16 @@
+vars = {
+  background-color: white,
+  default-color: #35495e,
+  primary-color: #41b883,
+  info-color: #003cff,
+  danger-color: #f00,
+  loading-animation-duration: .2s,
+  font: monospace,
+}
+
 :root
-  --default-color #35495e
-  --primary-color #41b883
-  --info-color #003cff
-  --danger-color #f00
-  --animation-duration 2s
-  --font monospace
+  for i, j in vars
+    {'--'+i}: j
+
+for i, j in vars
+  define(i, var(unquote('--'+i)))
