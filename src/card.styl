@@ -2,7 +2,7 @@
   @extend .mx-3
   position relative
 
-  for i in default primary info danger
+  for i in card-variants
     color = var(unquote('--'+i+'-color'))
     &.card-{i}
       if i != primary
