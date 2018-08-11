@@ -4,7 +4,7 @@
 
   for i in card-variants
     color = var(unquote('--'+i+'-color'))
-    &.card-{i}
+    &.{i}
       if i != primary
         color color
       box-shadow(color)
